@@ -6,67 +6,80 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Como a crescente adoção de carros elétricos pode influenciar a qualidade do ar em áreas urbanas?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Carros elétricos reduzem poluentes atmosféricos em áreas urbanas, melhorando a qualidade do ar. Eles não emitem gases nocivos, como óxidos de nitrogênio e partículas finas.",
+                afirmacao: "Carros elétricos reduzem a poluição do ar urbano ao não emitir poluentes diretamente."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Os benefícios para a qualidade do ar dependem da fonte de eletricidade usada para carregar os veículos. Se a eletricidade vem de fontes não renováveis, a melhoria pode ser limitada.",
+                afirmacao: "A origem da eletricidade usada para carregar carros elétricos afeta a melhoria da qualidade do ar."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Quais são os desafios ambientais associados à produção e descarte de baterias de carros elétricos?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "A produção de baterias para carros elétricos pode causar impactos ambientais, como degradação do solo e poluição, devido à mineração de minerais raros.",
+                afirmacao: "A produção de baterias para carros elétricos pode causar impactos ambientais significativos."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "O descarte inadequado de baterias pode levar ao acúmulo de resíduos tóxicos. Melhorar a reciclagem e a gestão de resíduos é essencial para reduzir esses impactos.",
+                afirmacao: "O descarte inadequado de baterias pode resultar em resíduos tóxicos e poluição."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "De que maneira a infraestrutura de recarga para carros elétricos pode impactar o planejamento urbano e a ambientação das cidades?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "A expansão de estações de recarga pode alterar o uso do solo e o planejamento urbano, exigindo a criação de novos espaços e ajustes no design das cidades.",
+                afirmacao: "Estações de recarga podem influenciar o planejamento urbano e a utilização do espaço."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "A infraestrutura de recarga pode promover o desenvolvimento urbano sustentável e incentivar a adoção de carros elétricos, ajudando a reduzir a pegada de carbono das cidades.",
+                afirmacao: "Infraestrutura de recarga pode fomentar um desenvolvimento urbano mais sustentável."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Como a integração de veículos elétricos em frotas de transporte público pode afetar a sustentabilidade e a eficiência energética das cidades?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Veículos elétricos em transporte público reduzem emissões e melhoram a eficiência energética, tornando as cidades mais sustentáveis.",
+                afirmacao: "Veículos elétricos no transporte público ajudam a reduzir emissões e melhorar a sustentabilidade urbana."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Desafios como custos iniciais e necessidade de infraestrutura de recarga devem ser superados para maximizar os benefícios ambientais e energéticos.",
+                afirmacao: "A eficácia na integração de veículos elétricos depende de superar custos e desafios de infraestrutura."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Qual é o papel das energias renováveis na maximização dos benefícios ambientais dos carros elétricos?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Usar energias renováveis para carregar carros elétricos é crucial para maximizar seus benefícios ambientais e reduzir emissões de carbono.",
+                afirmacao: "Energias renováveis são essenciais para maximizar os benefícios ambientais dos carros elétricos."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "A expansão das energias renováveis pode reduzir custos de eletricidade e incentivar a adoção de veículos elétricos.",
+                afirmacao: "A expansão das energias renováveis pode diminuir custos e promover a adoção de veículos elétricos."
+            }
+        ]
+    },
+    {
+        enunciado: "Como a autonomia limitada dos carros elétricos pode influenciar a escolha de locais para novas estações de recarga e seu impacto na mobilidade sustentável?",
+        alternativas: [
+            {
+                texto: "A autonomia limitada dos carros elétricos exige uma rede densa de estações de recarga, afetando o planejamento urbano e a gestão do espaço.",
+                afirmacao: "A autonomia limitada dos carros elétricos pode exigir mais estações de recarga e impactar o planejamento urbano."
+            },
+            {
+                texto: "Soluções inovadoras, como estações móveis e recarga rápida, podem ajudar a superar limitações de autonomia e melhorar a mobilidade sustentável.",
+                afirmacao: "Soluções inovadoras de recarga podem melhorar a mobilidade sustentável apesar das limitações de autonomia."
             }
         ]
     },
